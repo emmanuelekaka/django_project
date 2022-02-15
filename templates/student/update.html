@@ -1,0 +1,226 @@
+{% extends 'base.html' %} 
+
+
+<title>{% block title %}Update{% endblock %}</title>
+
+
+{% block content  %}
+
+<div class="containar">
+
+    <div class="signUp-model" style="display:flex;">
+        <div class="sign-content">
+            <div class="close"><a href="{% url 'logout' %}">+</a></div>
+            <div class="title">Update</div>    
+            <form method="post" action=" ">
+                {% csrf_token %}
+            
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        {{form.DoB}}
+                        {% if form.DoB.errors %}
+                        {% for error in form.DoB.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth(YY-MM-DD)</span>
+                        {{form.contact}}
+                        {% if form.contact.errors %}
+                        {% for error in form.contact.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Genda</span>
+                        {{form.gender}}
+                        {% if form.gender.errors %}
+                        {% for error in form.gender.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Course</span>
+                        {{form.maritialStatus}}
+                        {% if form.maritialStatus.errors %}
+                        {% for error in form.maritialStatus.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Faculty</span>
+                        {{form.course}}
+                        {% if form.course.errors %}
+                        {% for error in form.course.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hall of attachment</span>
+                        {{form.faculty}}
+                        {% if form.faculty.errors %}
+                        {% for error in form.faculty.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Resident Status</span>
+                        {{form.hall}}
+                        {% if form.hall.errors %}
+                        {% for error in form.hall.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        {{form.residenceStatus}}
+                        {% if form.residenceStatus.errors %}
+                        {% for error in form.residenceStatus.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        {{form.occupation}}
+                        {% if form.occupation.errors %}
+                        {% for error in form.occupation.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Entry year(YY-MM-DD)</span>
+                        {{form.yearOfEntry}}
+                        {% if form.yearOfEntry.errors %}
+                        {% for error in form.yearOfEntry.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Occupation</span>
+                        {{form.homeAddress}}
+                        {% if form.homeAddress.errors %}
+                        {% for error in form.homeAddress.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Maritial Status</span>
+                        {{form.nextOfKin}}
+                        {% if form.nextOfKin.errors %}
+                        {% for error in form.nextOfKin.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Next Of Kin</span>
+                        {{form.relationship}}
+                        {% if form.relationship.errors %}
+                        {% for error in form.relationship.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">RelationShip</span>
+                        {{form.contactNOK}}
+                        {% if form.contactNOK.errors %}
+                        {% for error in form.contactNOK.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Next of Kin Phone Number</span>
+                        {{form.recentSch}}
+                        {% if form.recentSch.errors %}
+                        {% for error in form.recentSch.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                
+                    <div class="input-box">
+                        <span class="details">Previous School/Institution</span>
+                        {{form.award}}
+                        {% if form.award.errors %}
+                        {% for error in form.award.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Award Attained </span>
+                        {{form.respnosibilityHeld}}
+                        {% if form.respnosibilityHeld.errors %}
+                        {% for error in form.respnosibilityHeld.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                   
+            
+            
+                </div>
+                
+            
+                <div class="button">
+                    <input type="submit" placeholder="Submit">
+                </div>
+            </form>
+            
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+{% endblock %}

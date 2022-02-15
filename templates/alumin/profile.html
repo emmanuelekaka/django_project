@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block title %}profile{% endblock %}
+
+
+{% block content %}
+
+{{data.user.first_Name}}
+
+
+<a href="{% url 'alumin_update'  data.id %}">update</a>
+
+{% endblock %}

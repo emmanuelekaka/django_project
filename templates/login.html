@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+
+<title>{% block title %}Login{% endblock %}
+
+
+
+    {% block content %} 
+
+
+    <div class="signUp-model" style="display:flex;">
+    
+        <div class="sign-content">
+            <div class="close"><a href="{% url 'home' %}">+</a></div>
+            <div class="row">
+                <h2 style="text-align: center;">Login</h2>
+                <div class="col-md-9 " style="margin: 0 auto;">
+            
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <div class="form-group">
+            
+                            <div class="form-group" style="padding-top:1.2em">
+                                <label for="email">Email</label>
+                                <input type="email" id="eamil" name="email" placeholder="ie abcd@gmail.com" class="form-control" required>
+                            </div>
+                            <div class="form-group" style="padding-top:1.2em">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Password" class="form-control" required>
+                            </div>
+            
+                            <div class="form-group" style="padding-top:1.2em">
+                                <button type="submit" class="btn btn-primary ">login</button>
+                                
+                            </div>
+                            <div class="info" style="text-align: center;">
+                                <h2>{{form.errors}}</h2>
+                                {%for message in messages %}
+                                <h2>{{message}}</h2>
+                                {% endfor %}
+                            </div>
+                            <div class="login-bottom"style="text-align: center;">
+                                <h4 style="font-size:1.2em; ">Dont have an account ?: <a href="{% url 'register' %}">sign in</a></h2>
+                                <h4 style="font-size:1.2em; ">Forgot <a href="{% url 'reset_password' %}"> Password</a></h2>
+                            </div>
+            
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+       
+    </div>
+
+    {% endblock %}

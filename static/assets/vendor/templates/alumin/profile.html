@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+{% block title %}profile{% endblock %}
+
+
+{% block content %}
+
+
+<div class="signUp-model" style="display:flex;">
+    <div class="sign-content">
+        <div class="close"><a href="{% url 'logout' %}">+</a></div>
+        <div class="title">{{data.user.first_Name}}Information</div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Course:</span>{{data.course}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">DoB:</span>{{data.DoB}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">maritial Status:</span>{{form.maritialStatus}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Residence Status:</span>{{data.gender}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Year of Entry:</span>{{data.yearOfEntry}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Home Address:</span>{{data.homeAddress}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Next Of Kin:</span>{{data.nextOfKin}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">RelationShip with kin:</span>{{data.relationship}}</p>
+        </div>
+        <div class="infoWrapper-item">
+            <p><span id="label">Next of Kin Contact:</span>{{data.contactNOK}}</p>
+        </div>
+        <button class="btn btn-primary"><a href="{% url 'alumin_update'  data.id  %}">UPDATE</a></button>
+    </div>
+   
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

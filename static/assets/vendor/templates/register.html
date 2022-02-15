@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+
+<title>{% block title %}Register {% endblock %}</title>
+
+
+{% block content %}
+
+<div class="signUp-model" style="display:flex;">
+    <div class="sign-content">
+        <div class="close"><a href="{% url 'home' %}">+</a></div>
+        <div class="title">Registration</div>
+
+       <h6 p-2>Registration in this form is only for either muslim students/alumin of kyambogo university</h6>
+        <form method="post" action=" ">
+            {% csrf_token %}
+        
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    {{form.first_Name}}
+                    {% if form.first_Name.errors %}
+                    {% for error in form.first_Name.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    {{form.last_Name}}
+                    {% if form.last_Name.errors %}
+                    {% for error in form.last_Name.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Status</span>
+                    {{form.status}}
+                    {% if form.status.errors %}
+                    {% for error in form.status.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Registration Number</span>
+                    {{form.regNo}}
+                    {% if form.regNo.errors %}
+                    {% for error in form.regNo.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    {{form.email}}
+                    {% if form.email.errors %}
+                    {% for error in form.email.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    {{form.password1}}
+                    {% if form.password1.errors %}
+                    {% for error in form.password1.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <span class="details">Comfirm password</span>
+                    {{form.password2}}
+                    {% if form.password2.errors %}
+                    {% for error in form.password2.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+        
+            </div>
+            <div class="agreement">
+                <div class="agree-input">
+                    <input type="checkbox"   id="agree" required >
+                    <label for="agree">I agree to the <a class="terms-link"href="#">terms</a> and conditions</label>
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. 
+                        Nam aliquam accusantium sed magnam a voluptatibus 
+                        ducimus inventore odio obcaecati. Consequuntur atque 
+                        quasi reprehenderit incidunt id accusantium iste 
+                        maxime vel facere?Lorem ipsum dolor sit amet consectetur a
+                        dipisicing elit. Officia accusamus reprehenderit debitis 
+                        rerum laboriosam, unde aut distinctio molestiae 
+                        inventore expedita dolor sapiente voluptas repellendus iusto facere 
+                        consequuntur,
+                         soluta aliquid vero?
+                    </p>
+                </div>
+            </div>
+        
+            <div class="button">
+                <input type="submit" placeholder="Submit">
+            </div>
+        </form>
+        
+    </div>
+   
+</div>
+
+</div>
+
+
+
+{% endblock %}

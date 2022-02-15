@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+
+{% block title %}register2{% endblock %}
+
+{% block content %}
+
+<div class="signUp-model" style="display:flex;">
+	<div class="sign-content">
+		<div class="close"><a href="{% url 'home' %}">+</a></div>
+		<div class="row">
+			<h2 style="text-align: center;">Enter Your new password twice</h2>
+			<div class="col-md-9 " style="margin: 0 auto;">
+		
+				<form method="post">
+					{% csrf_token %}
+					<div class="form-group">
+						<div class="form-group" style="padding-top:1.2em">
+							<label for="username">New Password</label>
+							{{form.new_password1}}
+						</div>
+						<div class="form-group" style="padding-top:1.2em">
+							<label for="password">Comfirm Password</label>
+							{{form.new_password2}}
+						</div>
+		
+						<div class="form-group" style="padding-top:1.2em">
+							<button type="submit" class="btn btn-primary " name="Update Password">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div style="text-align: center;">
+			<h2>{{form.errors}}</h2>
+		
+			{% for message in messages %}
+			<h2>{{message}}</h2>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+</div>
+<script>
+	document.querySelector('.links').remove();
+	document.querySelector('#id_new_password1').setAttribute('class', 'form-control');
+	document.querySelector('#id_new_password2').setAttribute('class', 'form-control');
+</script>
+
+{% endblock %}

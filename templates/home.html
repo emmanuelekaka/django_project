@@ -1,0 +1,622 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<title>{% block title %}home{% endblock %}</title>
+
+
+{% block content %}
+
+<section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center"><a
+                    href="mailto:contact@example.com">kyumsa00@gmail.com</a></i>
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span>+256752058665</span></i>
+        </div>
+
+        <div class="cta d-none d-md-flex align-items-center">
+            <a href="#about" class="scrollto">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <div class="logo">
+            <h1><a href="index.html">KYUMSA</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#about">Background</a></li>
+                        <li><a href="#team">Leaders</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="#services">Programs</a></li>
+                <li><a class="nav-link scrollto" href="#values">Events</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container" data-aos="fade-in">
+        <h1>Welcome to</h1>
+        <h2>KYAMBOGO UNIVERSITY MUSLIM STUDENT'S ASSOCIATION </h2>
+        <div class="d-flex align-items-center">
+            <i class="bx bxs-right-arrow-alt get-started-icon"></i>
+            <a href="{% url 'register'%}" class="btn-get-started scrollto">Register</a>
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+                    <div class="content">
+                        <h3>What exactly is KYUMA-KYUMSA</h3>
+                        <p>
+                            KYUMSA(Kyambogo University Muslim Students Association) is an association in Kyambogo
+                            University that aims at creating a
+                            condusive environment for all muslim students through a series of activities that create
+                            unity and confidence in them.
+                            Promote brotherhood and support in every angle so as to promote and improove onselves during 
+                            and after campus
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7 d-flex">
+                    <div class="icon-boxes d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                data-aos-delay="100">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-receipt"></i>
+                                    <h4>Mission</h4>
+                                    <p>
+                                        To serve Muslim students and facilitate thier efforts
+                                        to establish, develop, and maintain their spiritual and academic standards
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-cube-alt"></i>
+                                    <h4>Vission</h4>
+                                    <p>
+                                        Creating a safe space in which Muslim students build a closer relationship
+                                        with Allah and their community
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="icon-box mt-4 mt-xl-0">
+                                    <i class="bx bx-images"></i>
+                                    <h4>Core values </h4>
+                                    <p>
+                                        Concern for others, Honesty, Integrity & Reliability
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative"
+                    data-aos="fade-right">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                </div>
+
+                <div
+                    class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                    <h4 data-aos="fade-up">About us</h4>
+                    <h3 data-aos="fade-up">Background </h3>
+                    <p data-aos="fade-up">
+                        The association was formed in 1977 with the aim of uniting Muslim students in the three
+                        sister institutions:
+                        <b>ITEK </b>(Institute Teacher Education Kyambogo), <b>UPK</b>(Uganda Polytechnic Kyambogo),
+                        <b>UNISE </b>(Uganda National Institute Of Special Needs )<br>
+                        It was first named <b>kYAMSA</b> (Kyambogo Muslim Students Association) since kyambogo had
+                        not yet become a university
+                        rather they were just institutions that were neighboring each other.
+                    </p>
+
+                    <div class="icon-box" data-aos="fade-up">
+                        <!-- <div class="icon"><i class="bx bx-fingerprint"></i></div>  -->
+                        <h4 class="title"><a href="">Founding members</a></h4>
+                        <p class="description">
+
+                            Mr. Sserunjoji Katamba (Chairman)<br>
+                            Mr.Seremba Idris(Vice chairman)<br>
+                            Mr.Bbosa Kiyingi Moses (Secretary)<br>
+                            Mr.Nsamba Ibrahim (Treasurer)
+
+
+                        </p>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="title"><a href="">Commitee Members</a></h4>
+                        <div class="description">
+                            <ol>
+                                <li>Mr. Bbossa Muhammad</li>
+                                <li>Miss. Zaitun Nassali</li>
+                                <li>Mr Raphael Atibani</li>
+                                <li>Mr Kassimu Wammala</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+
+                        <h4 class="title"><a href="">Also</a></h4>
+                        <p class="description">
+                            At first the Muslims used tor perform their prayers under a tree near the frui center
+                            where the stanbic bank is located.<br>
+                            The first patron of the association is <b>Mr Sebayiga Bruhan</b> and <b>Professor Kato
+                                Habib</b> who handed over this duties
+                            to <b>Mr Mpaso Muhammad Waiswa </b> in 2006 and so on.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </section><!-- End About Section -->
+
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Programs</h2>
+                <p>
+                     Kyumsa defferent programs throughout the week for The students and muslims at large to increase their 
+                     knowledge in the course of Allah 
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Monday</a></h4>
+                        <p class="description">
+                            Lady's Haraq <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                        <p class="description">
+                            Gents Quran <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Tuesday</a></h4>
+                        <p class="description">
+                            Lady's Quran <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                        <p class="description">
+                            Mini Tafsir  <strong>7:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Wednesday</a></h4>
+                        <p class="description">
+                            Fiqh <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                        <p class="description">
+                            Nanziri Kenedy Darsu <strong>8:30pm</strong><br>(Nanziri)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Thursday</a></h4>
+                        <p class="description">
+                            Lady's Quran <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                        <p class="description">
+                            Quranic Arabic <strong>6:00pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Friday</a></h4>
+                        
+                            <p class="description">
+                                Family Darsu <strong>4:30pm</strong><br>(Kyambogo Mosque)
+                            </p>
+                            <p class="description">
+                                kachai <strong>8:30pm</strong><br>(Halls of Residence)
+                            </p>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Saturday</a></h4>
+                        <p class="description">
+                            Quran Memorisation <strong>2:00pm</strong><br>(Kyambogo Mosque)
+                        </p>
+                        <p class="description">
+                            kachai <strong>8:30pm</strong><br>(Banda)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Services Section
+
+    <!-- ======= Values Section ======= -->
+    <!-- <section id="values" class="values">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Events</h2>
+                <p>
+                    A number of events are carried out at kyumsa that improove on the relatioinship between the muslim brothers and sisers wihin the university and also 
+                    outside  more especially remote areas and also aid in appreciating the supremercy Allah through visiting 
+                    different areas and features.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="card" style="background-image: url({% static 'assets/img/IMG1.jpg'%});">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Events</a></h5>
+                            <p class="card-text">
+                                Various Events occur and in both KYUMSA and KYUMA that aid us  in strengthening the love between us and also improve on ourselves on all aspects of life 
+                            </p>
+                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="card" style="background-image: url({% static 'assets/img/image1.jpg'%});">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Our Plan</a></h5>
+                            <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                doloremque laudantium, totam rem.</p>
+                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card" style="background-image: url({% static 'assets/img/IMG4.jpg'%});">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Our Vision</a></h5>
+                            <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit,
+                                sed quia magni dolores.</p>
+                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card" style="background-image: url({% static 'assets/img/IMG4.jpg'%});">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Our Care</a></h5>
+                            <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam
+                                laudantium voluptatem.</p>
+                            <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> --> -->
+    <!-- End Values Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!-- <section id="testimonials" class="testimonials">
+        <div class="container position-relative" data-aos="fade-up">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Ramadhan Babidaza</h3>
+                            <h4>Chairman</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                risus at semper.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div> -->
+                    <!-- End testimonial item -->
+
+                    <!-- <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                            <h3>Elingo Abdur-Rahman</h3>
+                            <h4>V.chairman</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                legam anim culpa.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <!-- <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                            <h3>Maudhe Salim</h3>
+                            <h4>Treasurer</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                minim.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                     -->
+                    
+                    <!-- End testimonial item -->
+
+                    <!-- <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                            <h3>Siku Muzamil</h3>
+                            <h4>Secretary</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                dolore labore illum veniam.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- End testimonial item -->
+
+                    <!-- <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                            <h3>Lubega Nasif</h3>
+                            <h4>Speaker</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                culpa fore nisi cillum quid.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div> --> -->
+                    
+                    <!-- End testimonial item -->
+<!-- 
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section> -->
+    <!--End Testimonials Section -->
+
+     
+
+    
+
+
+
+    
+    
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2 data-aos="fade-up">Contact</h2>
+                <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
+                    fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                    impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+                    <div class="info-box">
+                        <i class="bx bx-map"></i>
+                        <h3>Our Address</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-box">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@example.com<br>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-box">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-xl-9 col-lg-12 mt-4">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject"
+                                placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+-->
+    <!-- End Contact Section -->
+
+<!-- </main> -->
+
+<!-- End #main -->
+<!-- <footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Flexor</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-lg-flex py-4">
+
+        <div class="me-lg-auto text-center text-lg-start">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Flexor</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits"> -->
+                 -->
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
+                <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+        <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</footer> -->
+<!-- End Footer -->
+
+
+{% endblock %}
+
+
